@@ -1,4 +1,5 @@
 // Schema for product data
+// prettier-ignore
 var productSchema = {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "http://hplussport.com/schemas/products.json",
@@ -23,6 +24,13 @@ var productSchema = {
       "image": {
         "type": "string"
       }
-    }
+    },
+    "required": [
+      "id",
+      "name",
+      "description",
+      "image_title",
+      "image"
+    ]
   }
 };
